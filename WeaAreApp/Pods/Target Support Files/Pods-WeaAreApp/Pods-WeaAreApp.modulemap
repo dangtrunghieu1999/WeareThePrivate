@@ -1,0 +1,6 @@
+framework module Pods_WeaAreApp {
+  umbrella header "Pods-WeaAreApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
