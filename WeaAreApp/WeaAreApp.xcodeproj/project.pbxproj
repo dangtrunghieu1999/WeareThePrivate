@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -148,13 +148,6 @@
 			path = SelectSize;
 			sourceTree = "<group>";
 		};
-		8424B18122DC7B1B006597EF /* Payment */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Payment;
-			sourceTree = "<group>";
-		};
 		8424B18222DC7B61006597EF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,8 +189,8 @@
 				841C747222D6F518002EA8B2 /* ProductList */,
 				84B7D40C22DCC45400373729 /* ProductDetail */,
 				8424B18022DC7AFE006597EF /* SelectSize */,
+				CF46EDF82551699800848F6F /* Payment */,
 				84A9FAB022DABE0B00F23D38 /* Cart */,
-				8424B18122DC7B1B006597EF /* Payment */,
 				84E49D6422DEC58C00929369 /* AccountNotLogined */,
 				84E49D6322DEC56800929369 /* AccountLogin */,
 			);
@@ -585,6 +578,13 @@
 			path = TextTableViewCell;
 			sourceTree = "<group>";
 		};
+		CF46EDF82551699800848F6F /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
 		F51833B396B48930A26C594E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -677,20 +677,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-WeaAreApp/Pods-WeaAreApp-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-WeaAreApp/Pods-WeaAreApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-WeaAreApp/Pods-WeaAreApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeaAreApp/Pods-WeaAreApp-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WeaAreApp/Pods-WeaAreApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E7BAA8D13CE5434F81E58072 /* [CP] Check Pods Manifest.lock */ = {
