@@ -8,10 +8,8 @@
 
 import UIKit
 
-class TextTableViewCell: UITableViewCell {
-    
-    public static let textCellId = "TextTableViewCell"
-    
+class TextTableViewCell: BaseTableViewCell {
+        
     // MARK: - UI Elements
     
     private var nameLabel: UILabel = {
@@ -21,14 +19,8 @@ class TextTableViewCell: UITableViewCell {
     }()
     
     // MARK: - View LifeCycle
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        layoutNameLabel()
-    }
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+    override func initialize() {
+        super.initialize()
         layoutNameLabel()
     }
     

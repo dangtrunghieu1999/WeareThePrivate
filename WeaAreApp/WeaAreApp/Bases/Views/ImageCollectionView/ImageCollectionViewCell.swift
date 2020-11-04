@@ -8,11 +8,7 @@
 
 import UIKit
 
-class ImageCollectionViewCell: UICollectionViewCell {
-    
-    // MARK: - Properties
-    
-    public static let imageId = "imageCollectionViewCell"
+class ImageCollectionViewCell: BaseCollectionViewCell {
     
     // MARK: UI - Elements
     public let photoImageView: UIImageView = {
@@ -24,19 +20,21 @@ class ImageCollectionViewCell: UICollectionViewCell {
     
     // MARK: - View LifeCycle
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    override func initialize() {
+        super.initialize()
         layoutPhotoImage()
     }
     
-    required public init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+    // MARK: - Public Method
+    
+    public func configCell(image: UIImage?) {
+        self.photoImageView.image = image ?? UIImage(named: "")
     }
     
     // MARK: - Layout
     
     func layoutPhotoImage() {
-        contentView.addSubview(photoImageView)
+        addSubview(photoImageView)
         photoImageView.snp.makeConstraints { (make) in
             make.edges.equalToSuperview()
         }

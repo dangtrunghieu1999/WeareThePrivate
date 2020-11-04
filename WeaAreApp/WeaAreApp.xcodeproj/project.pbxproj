@@ -51,6 +51,8 @@
 		CF50DE6725516B8B0052F416 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF50DE6625516B8B0052F416 /* UIFont+Extension.swift */; };
 		CF50DE7725516BDD0052F416 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF50DE7625516BDD0052F416 /* UITableView+Extension.swift */; };
 		CF50DE7A25516C230052F416 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF50DE7925516C230052F416 /* UIColor+Extension.swift */; };
+		CF71348D2552B43300100DC1 /* HomeViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF71348C2552B43300100DC1 /* HomeViewProtocol.swift */; };
+		CF7134912552B4C500100DC1 /* HomeViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7134902552B4C500100DC1 /* HomeViewAdapter.swift */; };
 		CFD4C7252552812400027B2A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD4C7242552812400027B2A /* BaseViewController.swift */; };
 		CFD4C7282552814F00027B2A /* BaseCollectionViewHeaderFooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD4C7272552814F00027B2A /* BaseCollectionViewHeaderFooterCell.swift */; };
 		CFD4C72B2552816B00027B2A /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD4C72A2552816B00027B2A /* BaseCollectionViewCell.swift */; };
@@ -107,6 +109,8 @@
 		CF50DE6625516B8B0052F416 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		CF50DE7625516BDD0052F416 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		CF50DE7925516C230052F416 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		CF71348C2552B43300100DC1 /* HomeViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewProtocol.swift; sourceTree = "<group>"; };
+		CF7134902552B4C500100DC1 /* HomeViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewAdapter.swift; sourceTree = "<group>"; };
 		CFD4C7242552812400027B2A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		CFD4C7272552814F00027B2A /* BaseCollectionViewHeaderFooterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewHeaderFooterCell.swift; sourceTree = "<group>"; };
 		CFD4C72A2552816B00027B2A /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -259,7 +263,8 @@
 		8494BE8222D62A99000E0CA3 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				CF75696D25527FBC00925077 /* Cell */,
+				CF71348B2552B40800100DC1 /* Adapter */,
+				CF6CF505255285C600F483A8 /* Protocols */,
 				84A9FADC22DAC47500F23D38 /* ViewModel */,
 				84A9FAD522DAC22900F23D38 /* ViewController */,
 			);
@@ -618,11 +623,20 @@
 			path = MainBar;
 			sourceTree = "<group>";
 		};
-		CF75696D25527FBC00925077 /* Cell */ = {
+		CF6CF505255285C600F483A8 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				CF71348C2552B43300100DC1 /* HomeViewProtocol.swift */,
 			);
-			path = Cell;
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CF71348B2552B40800100DC1 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				CF7134902552B4C500100DC1 /* HomeViewAdapter.swift */,
+			);
+			path = Adapter;
 			sourceTree = "<group>";
 		};
 		F51833B396B48930A26C594E /* Pods */ = {
@@ -776,12 +790,14 @@
 				CFD4C72E2552819400027B2A /* BaseTableViewCell.swift in Sources */,
 				84E49D7722DEDEC800929369 /* AccountLoginViewController.swift in Sources */,
 				84A9FAC422DAC04500F23D38 /* FilterTypeView.swift in Sources */,
+				CF71348D2552B43300100DC1 /* HomeViewProtocol.swift in Sources */,
 				84E2E57F22DF171500B223CF /* AccountVipCollectionViewCell.swift in Sources */,
 				84A9FAC822DAC0C500F23D38 /* ProductItemCellViewModel.swift in Sources */,
 				CF50DE6725516B8B0052F416 /* UIFont+Extension.swift in Sources */,
 				84A9FABE22DABFE900F23D38 /* ProductCollectionViewController.swift in Sources */,
 				84A9FAD022DAC18900F23D38 /* ProductListModel.swift in Sources */,
 				84A9FACC22DAC12300F23D38 /* HomeViewModel.swift in Sources */,
+				CF7134912552B4C500100DC1 /* HomeViewAdapter.swift in Sources */,
 				84A9FAD222DAC1A900F23D38 /* ProductListViewModel.swift in Sources */,
 				8424B18822DC7BB7006597EF /* SelectSizeTableViewCell.swift in Sources */,
 				84E2E57C22DF16FE00B223CF /* AccountSignInCollectionViewCell.swift in Sources */,

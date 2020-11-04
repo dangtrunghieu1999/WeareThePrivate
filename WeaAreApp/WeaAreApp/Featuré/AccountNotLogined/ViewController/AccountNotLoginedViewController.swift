@@ -21,7 +21,7 @@ class AccountNotLoginedViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.separatorStyle = .none
-        tableView.register(TextTableViewCell.self, forCellReuseIdentifier: TextTableViewCell.textCellId)
+        tableView.registerReusableCell(TextTableViewCell.self)
         return tableView
     }()
     
@@ -66,9 +66,7 @@ extension AccountNotLoginedViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: TextTableViewCell.textCellId, for: indexPath) as? TextTableViewCell else {
-            return UITableViewCell()
-        }
+        let cell: TextTableViewCell = tableView.dequeueReusableCell(for: indexPath)
         let loginItem = viewModel.itemType(at: indexPath)
         cell.configCell(with: loginItem)
         cell.selectionStyle = .none
