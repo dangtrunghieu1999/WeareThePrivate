@@ -51,6 +51,11 @@
 		CF50DE6725516B8B0052F416 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF50DE6625516B8B0052F416 /* UIFont+Extension.swift */; };
 		CF50DE7725516BDD0052F416 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF50DE7625516BDD0052F416 /* UITableView+Extension.swift */; };
 		CF50DE7A25516C230052F416 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF50DE7925516C230052F416 /* UIColor+Extension.swift */; };
+		CFD4C7252552812400027B2A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD4C7242552812400027B2A /* BaseViewController.swift */; };
+		CFD4C7282552814F00027B2A /* BaseCollectionViewHeaderFooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD4C7272552814F00027B2A /* BaseCollectionViewHeaderFooterCell.swift */; };
+		CFD4C72B2552816B00027B2A /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD4C72A2552816B00027B2A /* BaseCollectionViewCell.swift */; };
+		CFD4C72E2552819400027B2A /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD4C72D2552819400027B2A /* BaseTableViewCell.swift */; };
+		CFD4C731255281B000027B2A /* BaseTableViewHeaderFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD4C730255281B000027B2A /* BaseTableViewHeaderFooter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,12 +105,13 @@
 		CF50DE5B25516B010052F416 /* Array+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Array+Extention.swift"; path = "../../../../../SoundCloud/SoundCloud/SoundCloud/Extensions/UIKit/Array+Extention.swift"; sourceTree = "<group>"; };
 		CF50DE6325516B6F0052F416 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		CF50DE6625516B8B0052F416 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
-		CF50DE6F25516BA70052F416 /* BaseCollectionViewHeaderFooterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewHeaderFooterCell.swift; sourceTree = "<group>"; };
-		CF50DE7025516BA70052F416 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
-		CF50DE7125516BA70052F416 /* BaseTableViewHeaderFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewHeaderFooter.swift; sourceTree = "<group>"; };
-		CF50DE7225516BA70052F416 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		CF50DE7625516BDD0052F416 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		CF50DE7925516C230052F416 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		CFD4C7242552812400027B2A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CFD4C7272552814F00027B2A /* BaseCollectionViewHeaderFooterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewHeaderFooterCell.swift; sourceTree = "<group>"; };
+		CFD4C72A2552816B00027B2A /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		CFD4C72D2552819400027B2A /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		CFD4C730255281B000027B2A /* BaseTableViewHeaderFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewHeaderFooter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,6 +259,7 @@
 		8494BE8222D62A99000E0CA3 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				CF75696D25527FBC00925077 /* Cell */,
 				84A9FADC22DAC47500F23D38 /* ViewModel */,
 				84A9FAD522DAC22900F23D38 /* ViewController */,
 			);
@@ -593,10 +600,11 @@
 		CF50DE6925516B8F0052F416 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				CF50DE7025516BA70052F416 /* BaseCollectionViewCell.swift */,
-				CF50DE6F25516BA70052F416 /* BaseCollectionViewHeaderFooterCell.swift */,
-				CF50DE7225516BA70052F416 /* BaseTableViewCell.swift */,
-				CF50DE7125516BA70052F416 /* BaseTableViewHeaderFooter.swift */,
+				CFD4C7242552812400027B2A /* BaseViewController.swift */,
+				CFD4C7272552814F00027B2A /* BaseCollectionViewHeaderFooterCell.swift */,
+				CFD4C72A2552816B00027B2A /* BaseCollectionViewCell.swift */,
+				CFD4C72D2552819400027B2A /* BaseTableViewCell.swift */,
+				CFD4C730255281B000027B2A /* BaseTableViewHeaderFooter.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -608,6 +616,13 @@
 				846E168822D9FE3F001D3C36 /* BarButtonItemModel.swift */,
 			);
 			path = MainBar;
+			sourceTree = "<group>";
+		};
+		CF75696D25527FBC00925077 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		F51833B396B48930A26C594E /* Pods */ = {
@@ -747,15 +762,18 @@
 				84A9FABC22DABFCD00F23D38 /* AccountViewController.swift in Sources */,
 				84B7D41B22DCC76700373729 /* ProductDetailCollectionViewCell.swift in Sources */,
 				84A9FACA22DAC0F100F23D38 /* HomeViewController.swift in Sources */,
+				CFD4C7282552814F00027B2A /* BaseCollectionViewHeaderFooterCell.swift in Sources */,
 				84B7D41922DCC64500373729 /* ProductModel.swift in Sources */,
 				84A9FAD422DAC21200F23D38 /* ProductItemCollectionViewCell.swift in Sources */,
 				84B7D41222DCC4A100373729 /* ProductDetailViewController.swift in Sources */,
 				848D094F22D73493009BCC37 /* MainTabBarController.swift in Sources */,
+				CFD4C7252552812400027B2A /* BaseViewController.swift in Sources */,
 				84946E2922D5A8CA004DB2C4 /* AppDelegate.swift in Sources */,
 				84A9FAC022DAC00800F23D38 /* FilterTypeCollectionViewCell.swift in Sources */,
 				84A9FAC622DAC07E00F23D38 /* FilterTypeViewModel.swift in Sources */,
 				8494BE9922D62F62000E0CA3 /* ImageCollectionViewCell.swift in Sources */,
 				84E49D7122DECE0000929369 /* AccountNotLoginedViewController.swift in Sources */,
+				CFD4C72E2552819400027B2A /* BaseTableViewCell.swift in Sources */,
 				84E49D7722DEDEC800929369 /* AccountLoginViewController.swift in Sources */,
 				84A9FAC422DAC04500F23D38 /* FilterTypeView.swift in Sources */,
 				84E2E57F22DF171500B223CF /* AccountVipCollectionViewCell.swift in Sources */,
@@ -767,6 +785,7 @@
 				84A9FAD222DAC1A900F23D38 /* ProductListViewModel.swift in Sources */,
 				8424B18822DC7BB7006597EF /* SelectSizeTableViewCell.swift in Sources */,
 				84E2E57C22DF16FE00B223CF /* AccountSignInCollectionViewCell.swift in Sources */,
+				CFD4C731255281B000027B2A /* BaseTableViewHeaderFooter.swift in Sources */,
 				8446473822DF709B0029C82F /* PolicyTableViewCell.swift in Sources */,
 				84A9FAB822DABF3700F23D38 /* CartViewController.swift in Sources */,
 				84E49D6A22DEC5F200929369 /* AccountNotLoginedItemType.swift in Sources */,
@@ -774,6 +793,7 @@
 				84E49D7522DECF5800929369 /* TextTableViewCell.swift in Sources */,
 				8424B18622DC7B96006597EF /* SelectSizeViewController.swift in Sources */,
 				84B7D41722DCC5DD00373729 /* Dimension.swift in Sources */,
+				CFD4C72B2552816B00027B2A /* BaseCollectionViewCell.swift in Sources */,
 				CF50DE6425516B6F0052F416 /* UICollectionView+Extension.swift in Sources */,
 				842B694122D9E2B800702DAF /* ImageResources.swift in Sources */,
 				CF50DE6025516B010052F416 /* Array+Extention.swift in Sources */,

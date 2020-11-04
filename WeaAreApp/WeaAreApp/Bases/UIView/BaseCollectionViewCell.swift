@@ -1,9 +1,9 @@
 //
-//  File.swift
-//  SoundCloud
+//  BaseCollectionViewCell.swift
+//  WeaAreApp
 //
-//  Created by Dang Trung Hieu on 9/23/20.
-//  Copyright © 2020 Dang Trung Hieu. All rights reserved.
+//  Created by Dang Trung Hieu on 11/4/20.
+//  Copyright © 2020 admin. All rights reserved.
 //
 
 import UIKit
@@ -45,4 +45,3 @@ open class BaseCollectionViewCell: UICollectionViewCell, Reusable {
     }
    
 }
-
